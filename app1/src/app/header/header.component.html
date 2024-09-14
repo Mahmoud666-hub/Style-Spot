@@ -1,13 +1,14 @@
 
-
+<header>
     <div style="display: flex; justify-content:space-between;">
         <div >
-            <h1 style="margin: 15px; margin-top:10px;">LOGO</h1>
+            <h1 style="margin: 15px; margin-top:18px;">LOGO</h1>
+            <!-- <img src="../../assets/images/favicon.png" alt=""> -->
         </div>
 
-        <div>
-            <ul>
-                <li> <a href="home">Home</a></li>
+        <div class="navbar-header"  >
+            <ul class="nav navbar-nav">
+                <li><a href="home">Home</a></li>
                 <li> <a href="products">Products</a></li>
                 <li> <a href="contact">Contact Us</a></li>
                 <li> <a href="about">About Us</a></li>
@@ -15,16 +16,60 @@
         </div>
 
         <div >
-            <button class="search-input"><span class="material-symbols-outlined">
+            <button class="search-input" id="searchdivbutton"><span class="material-symbols-outlined" (click)="toggleInput()">
                 search
                 </span></button>
-            <button class="search-input"><span class="material-symbols-outlined">
-                shopping_cart_checkout
-                </span></button>
-            <button class="search-input"><span class="material-symbols-outlined">
+
+                <a href="cart">
+                    <button class="search-input" ><span class="material-symbols-outlined" >
+                        shopping_cart_checkout
+                        </span></button>
+                </a>
+
+            <!-- <button class="search-input"><span class="material-symbols-outlined" (click)="togglemenu()">
                 contacts_product
                 </span>
-            </button>
+            </button> -->
+            <div class="dropdown">
+                <!-- <span>Mouse over me</span> -->
+                <button class="search-input"><span class="material-symbols-outlined">
+                    contacts_product
+                    </span>
+                </button>
+                <div class="dropdown-content">
+                    <span>
+                        <a href="login">log-in
+                            <span class="material-symbols-outlined">
+                                login</span>
+                           </a>
+                    </span>
+                    <hr>
 
+                    <span style="display: block;">
+                        <a href="register">sign up
+                            <span class="material-symbols-outlined">
+                                account_circle
+                            </span></a>
+                    </span>
+                </div>
+              </div>
         </div>
     </div>
+
+    <div id="searchdiv" >
+        <div class="input-wrapper"> 
+            <input *ngIf="isInputVisible" id="search" type="text" placeholder="Search..."> 
+            <!-- <button onclick="alert('Button clicked!');">  -->
+                <button *ngIf="isInputVisible" (click)="handleButtonClick()"> 
+    
+                <span class="material-symbols-outlined">
+                    search
+                    </span> 
+            </button>
+        </div>
+    </div>
+
+</header>
+
+
+ 

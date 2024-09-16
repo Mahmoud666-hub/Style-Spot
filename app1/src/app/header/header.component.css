@@ -51,7 +51,7 @@ header {
 
 
 
-.dropdown {
+.dropdownn {
   /* position: relative; */
   display: inline-block;
 }
@@ -70,7 +70,7 @@ header {
 
 }
 
-.dropdown:hover .dropdown-content {
+.dropdownn:hover .dropdown-content {
   display:block;
 }
 

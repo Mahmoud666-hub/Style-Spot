@@ -1,0 +1,41 @@
+.maincontainer{
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    width: 30%;
+    height: 330px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#loginbtn{
+    font-size: larger;
+    margin-top: 20px;  
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+#loginbtn:hover{
+    opacity: 4;
+    background-color: burlywood;
+
+}
+.upbtn{
+    width: 100%;
+    border-radius: 5px;
+}
+.upbtn:hover{
+    border-color: burlywood;
+}
+.container{
+    margin-bottom: 10px;
+}
+.cancelbtn{
+    background-color: rgb(205, 147, 48);
+    font-size: medium;
+    border-radius: 10%;
+}
+.psw{
+    float: right;
+}
+
+

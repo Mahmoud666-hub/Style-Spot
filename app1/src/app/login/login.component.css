@@ -3,7 +3,7 @@
     padding: 20px;
     width: 30%;
     height: 330px;
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
 }

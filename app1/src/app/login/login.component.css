@@ -42,6 +42,7 @@
 }
 #cancelbtn a{
     text-decoration: none;
+    color: white;
 }
 
 #cancelbtn:hover{

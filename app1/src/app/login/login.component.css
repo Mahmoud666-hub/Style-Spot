@@ -4,6 +4,8 @@
     width: 30%;
     height: auto;
     position: relative;
+    height: 330px;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
 }

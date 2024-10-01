@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-register',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  userModel = new User ('', '', '', '')
 }

@@ -1,27 +1,28 @@
-<form>
+<form #userForm="ngForm">
     <div class="maincontainer">
         <div class="container">
             <label for="email"><p class="labeltext">E-mail</p></label>
-            <input class="upbtn" type="text" name="email" placeholder="Enter E-mail" required>
+            <input name="email" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" [(ngModel)]="userModel.email" class="form-control upbtn" type="text"  placeholder="Enter E-mail" required>
+            <small class="text-danger" [class.d-none]="email.valid && email.untouched">Email is required</small>
         </div>
         <div class="container">
-            <label for="uname" class="labeltext"><p>Username</p></label>
-            <input class="upbtn" type="text" name="uname" placeholder="Choose Username" required>
+            <label for="username" class="labeltext"><p>Username</p></label>
+            <input #username="ngModel" [class.is-invalid]="username.invalid && username.touched" [(ngModel)]="userModel.username" class="form-control upbtn" type="text" name="username" placeholder="Choose Username" required>
         </div>
         <!-- <div class="container">
             <label for="country"><p>Country</p></label>
             <input class="upbtn" type="text" name="country" placeholder="Your country" required>
         </div> -->
         <div class="container">
-            <label for="psw" class="labeltext"><p>Password</p></label>
-            <input class="upbtn" type="text" name="psw" placeholder="Enter Password" required>
+            <label for="password" class="labeltext"><p>Password</p></label>
+            <input #password="ngModel" [class.is-invalid]="password.invalid && password.touched" [(ngModel)]="userModel.password" class="form-control upbtn" type="text" name="password" placeholder="Enter Password" required>
         </div>
         <div class="container">
-            <label for="rpsw" class="labeltext"><p>Repeat Password</p></label>
-            <input class="upbtn" type="text" name="rpsw" placeholder="Repeat Password" required>
+            <label for="repeatpassword" class="labeltext"><p>Repeat Password</p></label>
+            <input #repeatpassword="ngModel" [class.is-invalid]="repeatpassword.invalid && repeatpassword.touched" [(ngModel)]="userModel.repeatpassword" class="form-control upbtn" type="text" name="repeatpassword" placeholder="Repeat Password" required>
         </div>
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-        <button type="submit" class="registerbtn">Register</button>
+        <button type="submit"  class="btn btn-primary" id="registerbtn">Register</button>
         <div class="container signin">
             <p>Already have an account?  <a href="/login">Sign in</a></p>
         </div>

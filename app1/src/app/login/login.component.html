@@ -1,22 +1,25 @@
-<form>
+<form #userForm="ngForm">
+
     <div class="maincontainer">
         <div class="container">
-            <label for="uname"><b>Username</b></label><br>
-            <input class="upbtn" type="text" placeholder="Enter Username" name="uname" required><br>
+            <label for="username"><b>Username</b></label><br>
+            <input #name="ngModel" required [class.is-invalid]="name.invalid && name.touched" class="upbtn form-control" type="text" placeholder="Enter Username" name="username" [(ngModel)]="userModel.name" >
         </div>
+
         <div class="container">
-            <label for="psw"><b>Password</b></label><br>
-            <input class="upbtn" type="text" placeholder="Enter Password" name="psw" required>
+            <label for="password"><b>Password</b></label><br>
+            <input class="upbtn form-control" required  #password="ngModel"  [class.is-invalid]="password.invalid && password.touched" type="text" placeholder="Enter Password" name="password" [(ngModel)]="userModel.password">
+            <small class="text-danger" [class.d-none]="password.valid || password.untouched">Password is requird</small>
         </div>
         <div class="container">
             <label for="remember" id="chbox">
-                <input type="checkbox" checked="checked" name="remember">Remember me
+                <input type="checkbox" checked="checked" name="remember" [(ngModel)]="userModel.remember">Remember me
             </label>
         </div>
-        <button id="loginbtn" type="submit">Login</button><hr>
+        <button id="loginbtn" type="submit" [disabled]="userForm.form.invalid" class="btn btn-primary">Login</button><hr>
     
-        <div class="container">
-            <button type="button" class="cancelbtn">Cancel</button>
+        <div class="containera">
+            <button id="cancelbtn" type="button" class="btn btn-primary"><a href="/app1/src/app/home">Cancel</a></button>
             <span class="psw"><a href="#">Forget Password</a></span>
         </div>
         <div class="container signup">
@@ -24,3 +27,4 @@
         </div>
     </div>
 </form>
+

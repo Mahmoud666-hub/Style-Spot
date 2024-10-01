@@ -2,7 +2,7 @@
     margin: 20px auto 20px auto;
     padding: 20px;
     width: 30%;
-    height: 330px;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,9 @@
     margin-top: 20px;  
     border-radius: 10px;
     cursor: pointer;
+    width: 100px;
+    left: 30%;
+    position: relative;
 
 }
 #loginbtn:hover{
@@ -22,6 +25,7 @@
 .upbtn{
     width: 100%;
     border-radius: 5px;
+    border-width: 5px;
 }
 .upbtn:hover{
     border-color: burlywood;
@@ -29,10 +33,19 @@
 .container{
     margin-bottom: 10px;
 }
-.cancelbtn{
+.btn{
     background-color: rgb(205, 147, 48);
     font-size: medium;
     border-radius: 10%;
+
+}
+#cancelbtn a{
+    text-decoration: none;
+}
+
+#cancelbtn:hover{
+    opacity: 4;
+    background-color: burlywood;
 }
 .psw{
     float: right;

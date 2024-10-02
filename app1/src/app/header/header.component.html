@@ -18,12 +18,26 @@
             <button class="search-input" id="searchdivbutton"><span class="material-symbols-outlined" (click)="toggleInput()">
                 search
                 </span></button>
-
-                <a href="cart">
+                <div class="dropdownn">
+                    <!-- <span>Mouse over me</span> -->
                     <button class="search-input" ><span class="material-symbols-outlined" >
                         shopping_cart_checkout
                         </span></button>
-                </a>
+                    <div class="dropdown-content">
+                        <span>
+                            <a href="cart">Cart</a>
+                        </span>
+                        <hr>
+                        <span style="display: block;">
+                            <a href="checkout">Check Out</a>
+                        </span>
+                    </div>
+                  </div>
+                <!-- <a href="cart">
+                    <button class="search-input" ><span class="material-symbols-outlined" >
+                        shopping_cart_checkout
+                        </span></button>
+                </a> -->
 
             <!-- <button class="search-input"><span class="material-symbols-outlined" (click)="togglemenu()">
                 contacts_product

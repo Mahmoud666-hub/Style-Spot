@@ -8,15 +8,20 @@
         <div class="head-bar"  >
             <ul class="">
                 <li><a routerLink="home">Home</a></li>
-                <li> <a routerLink="products">Products</a></li>
+                <li> <a routerLink="products">Shop</a></li>
                 <li> <a routerLink="contact">Contact Us</a></li>
                 <li> <a routerLink="about">About Us</a></li>
             </ul>
         </div>
 
         <div >
-            <button class="search-input" id="searchdivbutton"><span class="material-symbols-outlined" (click)="toggleInput()">
+            <button class="search-input" id="searchdivbutton">
+                <span class="material-symbols-outlined" (click)="toggleInput()">
                 search
+                </span></button>
+            <button class="search-input" >
+                <span class="material-symbols-outlined">
+                favorite
                 </span></button>
                 <div class="dropdownn">
                     <!-- <span>Mouse over me</span> -->
@@ -25,11 +30,11 @@
                         </span></button>
                     <div class="dropdown-content">
                         <span>
-                            <a href="cart">Cart</a>
+                            <a routerLink="cart">Cart</a>
                         </span>
                         <hr>
                         <span style="display: block;">
-                            <a href="checkout">Check Out</a>
+                            <a routerLink="checkout">Check Out</a>
                         </span>
                     </div>
                   </div>
@@ -51,7 +56,7 @@
                 </button>
                 <div class="dropdown-content">
                     <span>
-                        <a href="login">log-in
+                        <a routerLink="login">log-in
                             <span class="material-symbols-outlined">
                                 login</span>
                            </a>
@@ -59,7 +64,7 @@
                     <hr>
 
                     <span style="display: block;">
-                        <a href="register">sign up
+                        <a routerLink="register">sign up
                             <span class="material-symbols-outlined">
                                 account_circle
                             </span></a>

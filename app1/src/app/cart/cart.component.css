@@ -1,0 +1,140 @@
+.container-head h1{
+    background-image: url("/assets/images/checkoutback.jpg");
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+#big-con {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+table, th, td {
+    border: 1px solid rgb(161, 155, 155);
+  }
+  td {
+    text-align: center; /* لتوسيط النص أفقيًا */
+    vertical-align: middle; /* لتوسيط النص عموديًا */
+    height: 100px; /* يمكنك تعديل هذا الرقم لضبط ارتفاع الخلايا */
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+  }
+
+  
+  .table {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+  }
+
+
+.cart-plus-minus {
+    display: inline-block;
+    position:relative;
+    float: none;
+    margin: 0px auto;
+}
+
+.cart-plus-minus .qtybutton {
+    font-size: 20px;
+    color: #201f1f;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    height: 22px;
+    width: 22px;
+    background: transparent;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0;
+}
+
+
+.product-quantity input {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    padding: 0px 20px;
+    height: 50px;
+    width: 110px;
+    text-align: center;
+}
+
+.dec{
+    left: 7px;
+}
+.inc {
+    right: 7px;
+}
+
+.table-content table {
+    text-align: center;
+}
+
+img {
+    width: 125px;
+}
+
+.cpn {
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.cpon {
+    height: 50px;
+    border: 2px solid #c8c8cd;
+    padding: 0 15px;
+    margin-right: 10px;
+    float: left;
+}
+.cpon1 {
+    float: left;
+}
+.cpon2 {
+    float: right;
+}
+.vfg {
+    background-color: #323232;
+    color: white;
+    border-radius: 0px;
+    height: 50px;
+}
+.vfg:hover {
+    background-color: #bc8246;
+}
+
+.cart-total {
+    margin-top: 100px;
+    margin-left: 10%;
+    /* background-color: aqua; */
+    max-width: 80%;
+}
+
+.lii {
+
+    width: 400px;
+    height: 50px;
+    list-style: none;
+    font-size: 15px;
+    color: #6f7172;
+    padding: 10px 30px;
+    border: 1px solid #eaedff;
+    font-weight: 400;
+    margin: 0; 
+}
+
+.mon {
+    float: right;
+}

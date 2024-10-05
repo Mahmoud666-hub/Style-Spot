@@ -8,6 +8,7 @@ import { CartComponent } from './cart/cart.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { SingepageComponent } from './singepage/singepage.component';
 
 const routes: Routes = [
   {path:"home", component:HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path:"cart", component:CartComponent},
   {path:"about", component:AboutComponent},
   {path:"products", component:ProductsComponent},
-  {path:"checkout", component:CheckoutComponent}
+  {path:"checkout", component:CheckoutComponent},
+  {path:"singepage", component:SingepageComponent},
 
 ];
 

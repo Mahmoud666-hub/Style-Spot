@@ -1,0 +1,11 @@
+.container-head h1{
+    background-image: url("../../assets/images/checkoutback.jpg");
+    width: 100%;
+    height: 300px;
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

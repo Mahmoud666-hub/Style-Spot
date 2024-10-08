@@ -9,3 +9,17 @@
     display: flex;
     justify-content: center;
 }
+.container{
+    
+    margin: auto;
+    padding: 20px;
+}
+.btnplaceorder, .collapsible{
+    background-color: #323232;
+    border-color: #323232;
+    color: #fff;
+
+}
+.btnplaceorder:hover, .collapsible:hover{
+    background-color: #bc8246;
+}

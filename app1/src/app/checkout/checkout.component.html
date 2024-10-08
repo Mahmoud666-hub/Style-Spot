@@ -1,19 +1,124 @@
-<div class="container-head">
+<div class="container-head ">
     <h1>Checkout</h1>
 </div>
+
 <section class="container row">
     <div class="col-lg-6">
         <h2>Shipping Detail</h2>
         <form>
-
+            <div class="country-select">
+                <label>Country <span class="required text-danger">*</span></label>
+                <select class="form-control">
+                    <option *ngFor="let x of Country">{{x}}</option>
+                </select>
+            </div>
+            <div>
+                <label>First Name <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Last Name <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Address <span class="text-danger">*</span></label>
+                <input class="form-control">
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Town / City <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>State / Country <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Postcode / Zip <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Email Address <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Phone <span class="text-danger">*</span></label>
+                <input class="form-control">
+            </div>
+            <div>
+                <label>Order Notes</label>
+                <textarea class="form-control"></textarea>
+            </div>
         </form>
     </div>
 
-    <div class="col-lg-6">
+    <div class="col-6">
         <h2>My Order</h2>
-        <form>
-
-        </form>
+        <div class="">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="col-4">Product</th>
+                        <th class="col-4">Quantity</th>
+                        <th class="col-4">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Euvira Rocking Chair</td>
+                        <td>1</td>
+                        <td>$ 85</td>
+                    </tr>
+                    <tr>
+                        <td>Wooden container Bowl</td>
+                        <td>1</td>
+                        <td>$ 70</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Cart Subtotal</th>
+                        <td></td>
+                        <td>$ 155</td>
+                    </tr>
+                    <tr>
+                        <th>Shipping</th>
+                        <td>
+                            <input type="radio">
+                            <label>Free Shipping</label>
+                        </td>
+                        <td>
+                            <input type="radio">
+                            <label>Flat Rate: <span>$ 7</span></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Order Total</th>
+                        <td></td>
+                        <td>$ 155</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div>
+            <button type="button" class="collapsible card">Direct Bank Transfer</button>
+            <div class="content">
+                <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.
+                </p>
+            </div>
+        </div>
+        <div>
+            <button type="button" class="collapsible card">PAYPAL</button>
+            <div class="content">
+                <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                </p>
+            </div>
+        </div>
+        <div>
+            <button type="submit" class="os-btn btnplaceorder form-control">Place Order</button>
+        </div>
     </div>
 </section>
+
+
 

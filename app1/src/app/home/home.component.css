@@ -5,3 +5,266 @@
      height: 90vh;
      background-repeat: no-repeat;
      background-size: 100% 100%;   }
+/*AyaHaggag*/
+html,
+body{
+  position: relative;
+  height: 100%;
+}
+
+body{
+  display: flex;
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+swiper-container{
+  height: 100%;
+  width: 100%;
+}
+swiper-slide{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+swiper-slide .slide{
+  z-index: 1;
+  position: absolute;
+}
+swiper-slide .slide img{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+swiper-slide .slide .info{
+  position: absolute;
+  right: 22%;
+  top: 17%;
+  padding: 15px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  color: #323232;
+
+
+}
+swiper-slide .slide .info .animation{
+  display: inline-block;
+  text-align: center;
+}
+swiper-slide .slide .info .animation h2{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  width: 100%;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  text 5s steps(19),
+  cursor .4s step-end infinite alternate;
+}
+swiper-slide .slide .info p{
+  font-size: 25px;
+  width: 40%;
+}
+
+@keyframes cursor {
+  50%{
+    border-color: transparent;
+  }
+
+}
+@keyframes text {
+  from{ width: 0;}
+}
+swiper-slide .slide1{
+  z-index: 1;
+  position: absolute;
+}
+swiper-slide .slide1 img{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+swiper-slide .slide1 .info{
+  position: absolute;
+  right: 11%;
+    top: 6%;
+  padding: 15px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  color: #323232;
+
+
+}
+swiper-slide .slide1 .info .animation1{
+  display: inline-block;
+  text-align: center;
+}
+swiper-slide .slide1 .info .animation1 h2{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  width: 100%;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  text1 5s steps(46),
+  cursor1 .4s step-end infinite alternate;
+}
+swiper-slide .slide1 .info p{
+  font-size: 25px;
+  width: 40%;
+}
+
+@keyframes cursor1 {
+  50%{
+    border-color: transparent;
+  }
+
+}
+@keyframes text1 {
+  from{ width: 0;}
+}
+swiper-slide .slide2{
+  z-index: 1;
+  position: absolute;
+}
+swiper-slide .slide2 img{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+swiper-slide .slide2 .info{
+  position: absolute;
+  right: 20%;
+  top: 0%;
+  padding: 15px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  color: #323232;
+
+
+}
+swiper-slide .slide2 .info .animation2{
+  display: inline-block;
+  text-align: center;
+}
+swiper-slide .slide2 .info .animation2 h2{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  width: 100%;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  text2 5s steps(32),
+  cursor2 .4s step-end infinite alternate;
+}
+swiper-slide .slide2 .info p{
+  font-size: 25px;
+  width: 40%;
+}
+
+@keyframes cursor2 {
+  50%{
+    border-color: transparent;
+  }
+
+}
+@keyframes text2 {
+  from{ width: 0;}
+}
+swiper-slide .slide3{
+  z-index: 1;
+  position: absolute;
+}
+swiper-slide .slide3 img{
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+swiper-slide .slide3 .info{
+  position: absolute;
+  right: 14%;
+    top: 55%;
+  padding: 15px 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+  color: #323232;
+
+
+}
+swiper-slide .slide3 .info .animation3{
+  display: inline-block;
+  text-align: center;
+}
+swiper-slide .slide3 .info .animation3 h2{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 10px;
+  width: 100%;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+  text3 5s steps(35),
+  cursor3 .4s step-end infinite alternate;
+}
+swiper-slide .slide3 .info p{
+  font-size: 25px;
+  width: 40%;
+}
+
+@keyframes cursor3 {
+  50%{
+    border-color: transparent;
+  }
+
+}
+@keyframes text3 {
+  from{ width: 0;}
+}
+
+.mySwiper1{
+  height: 80%;
+  width: 100%;
+}
+.mySwiper2{
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+
+}
+.mySwiper2 swiper-slide{
+  width: 25px;
+  height: 100%;
+  opacity: 0.4;
+
+}
+.mySwiper2 .swiper-slide-thumb-active {
+  opacity: 1;
+
+}

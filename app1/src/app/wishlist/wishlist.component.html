@@ -1,0 +1,59 @@
+<div class="container-head">
+    <h1>Wishlist</h1>
+</div>
+
+<section class="container" id="big-con">
+    <div  class="table-content table-responsive">
+        <table  class="table">
+            <thead >
+                <tr>
+                    <th  class="product-thumbnail">Images</th>
+                    <th  class="cart-product-name">Product</th>
+                    <th  class="product-price">Add to cart</th>
+                    <th  class="product-quantity">unit Price</th>
+                    <th  class="product-remove">Remove</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr  class="ng-star-inserted" >
+                    <td  class="product-thumbnail">
+                        <a routerLink="/singepage">
+                            <!-- لازم اضع / -->
+                            <img  alt="product-img" src="assets/images/product_1.png">
+                        </a>
+                    </td>
+                    <td  class="product-name">
+                        <a  routerLink="/singepage">
+                            Wooden container Bowl
+                        </a>
+                    </td>
+
+                    <td  class="product-quantity">
+                            <div  class="cart-plus-minus">
+                                <button class="vfg">Add to cart</button>
+                                <!-- <input  type="text" readonly=""> -->
+                                <!-- <div  class="dec qtybutton">-</div> -->
+                                <!-- <div  class="inc qtybutton">+</div> -->
+                            </div>
+                    </td>
+                    <td  class="product-subtotal">
+                            <span  class="amount"> $96.00 </span>
+                    </td>
+                    <td  class="product-remove">
+                        <a  class="cursor-pointer" (click)="''">
+                            <i  class="fa fa-times"></i>
+                        </a>
+                    </td>
+                </tr>
+
+                
+                <!-- row -->
+
+                <!-- row -->
+
+                    
+                    </tbody>
+        </table>
+        
+        </div>
+</section>

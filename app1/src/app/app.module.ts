@@ -20,6 +20,8 @@ import { ProductsComponent } from './products/products.component';
 import { AboutComponent } from './about/about.component';
 import { SingepageComponent } from './singepage/singepage.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     ProductsComponent,
     AboutComponent,
     SingepageComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    NotfoundComponent,
+    WishlistComponent
   ],
   imports: [
     BrowserModule,

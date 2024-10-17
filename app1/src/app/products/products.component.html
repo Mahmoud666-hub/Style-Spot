@@ -8,22 +8,22 @@
         <div class="col-md-3 one">
             <h3>Product Categories</h3>
             <div class="sidebar">
-                <a href="#">Shirts
+                <a (click)="filterProductsByCategory(4)" >Shirts
                     <span class="material-symbols-outlined">
                         double_arrow
                         </span>
                 </a>
-                <a href="#">T-shirts
+                <a (click)="filterProductsByCategory(3)" >T-shirts
                     <span class="material-symbols-outlined">
                         double_arrow
                         </span>
                 </a>
-                <a href="#">Hoodies
+                <a (click)="filterProductsByCategory(2)" >Hoodies
                     <span class="material-symbols-outlined">
                         double_arrow
                         </span>
                 </a>
-                <a href="#">Trousers
+                <a (click)="filterProductsByCategory(1)" >Trousers
                     <span class="material-symbols-outlined">
                         double_arrow
                         </span>
@@ -36,133 +36,24 @@
         </div>
         <!-- side navbar -->
         <div class="col-6 col-md-9 two">
-            <!-- card -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">100 $</p>
-                  <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                  <button class="search-input fav" routerLink="/wishlist" >
-                    <span class="material-symbols-outlined ">
-                    favorite
-                    </span></button>
-                </div>
-              </div>
-              <!-- card -->
 
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
-            <!-- card -->
+          @for (pro of filteredproducts; track pro.id) {
+                          <!-- card -->
             <div class="card" style="width: 18rem;">
-                <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">100 $</p>
-                  <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                  <button class="search-input fav" routerLink="/wishlist" >
-                    <span class="material-symbols-outlined ">
-                    favorite
-                    </span></button>
-                </div>
+              <img [src]="pro.imgurl" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> {{pro.name}} </h5>
+                <p class="card-text"> {{pro.price}} $ </p>
+                <a href="/singepage" class="btn btn-primary btncard">Details</a>
+                <button class="search-input fav" routerLink="/wishlist" >
+                  <span class="material-symbols-outlined ">
+                  favorite
+                  </span></button>
               </div>
-              <!-- card -->
+            </div>
             <!-- card -->
-            <div class="card" style="width: 18rem;">
-                <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">100 $</p>
-                  <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                  <button class="search-input fav" routerLink="/wishlist" >
-                    <span class="material-symbols-outlined ">
-                    favorite
-                    </span></button>
-                </div>
-              </div>
-              <!-- card -->
-                <!-- card -->
-                <div class="card" style="width: 18rem;">
-                    <img src="https://fakeimg.pl/300/" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">100 $</p>
-                      <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                      <button class="search-input fav" routerLink="/wishlist" >
-                        <span class="material-symbols-outlined ">
-                        favorite
-                        </span></button>
-                    </div>
-                  </div>
-              <!-- card -->
+          }
+
 
         </div>
       </div>

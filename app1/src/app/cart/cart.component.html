@@ -16,141 +16,44 @@
                 </tr>
             </thead>
             <tbody >
-                <tr  class="ng-star-inserted" >
-                    <td  class="product-thumbnail">
-                        <a routerLink="/singepage">
-                            <!-- لازم اضع / -->
-                            <img  alt="product-img" src="assets/images/product_1.png">
-                        </a>
-                    </td>
-                    <td  class="product-name">
-                        <a  routerLink="/singepage">
-                            Wooden container Bowl
-                        </a>
-                    </td>
-                    <td  class="product-price">
-                            <span  class="amount">
-                                $96.00
-                            </span>
-                    </td>
-                    <td  class="product-quantity">
-                            <div  class="cart-plus-minus">
-                                <input  type="text" readonly="">
-                                <div  class="dec qtybutton">-</div>
-                                <div  class="inc qtybutton">+</div>
-                            </div>
-                    </td>
-                    <td  class="product-subtotal">
-                            <span  class="amount"> $96.00 </span>
-                    </td>
-                    <td  class="product-remove">
-                        <a  class="cursor-pointer" (click)="''">
-                            <i  class="fa fa-times"></i>
-                        </a>
-                    </td>
-                </tr>
 
-                
                 <!-- row -->
-                <tr  class="ng-star-inserted" >
-                    <td  class="product-thumbnail">
-                        <a routerLink="/singepage">
-                            <!-- لازم اضع / -->
-                            <img  alt="product-img" src="assets/images/product_1.png">
-                        </a>
-                    </td>
-                    <td  class="product-name">
-                        <a  routerLink="/singepage">
-                            Wooden container Bowl
-                        </a>
-                    </td>
-                    <td  class="product-price">
-                            <span  class="amount">
-                                $96.00
-                            </span>
-                    </td>
-                    <td  class="product-quantity" >
-                            <div  class="cart-plus-minus" >
-                                <input  type="text" readonly="">
-                                <div  class="dec qtybutton">-</div>
-                                <div  class="inc qtybutton">+</div>
-                            </div>
-                    </td>
-                    <td  class="product-subtotal">
-                            <span  class="amount"> $96.00 </span>
-                    </td>
-                    <td  class="product-remove">
-                        <a  class="cursor-pointer" (click)="''">
-                            <i  class="fa fa-times"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr  class="ng-star-inserted" >
-                    <td  class="product-thumbnail">
-                        <a routerLink="/singepage">
-                            <!-- لازم اضع / -->
-                            <img  alt="product-img" src="assets/images/product_1.png">
-                        </a>
-                    </td>
-                    <td  class="product-name">
-                        <a  routerLink="/singepage">
-                            Wooden container Bowl
-                        </a>
-                    </td>
-                    <td  class="product-price">
-                            <span  class="amount">
-                                $96.00
-                            </span>
-                    </td>
-                    <td  class="product-quantity" >
-                            <div  class="cart-plus-minus" >
-                                <input  type="text" readonly="">
-                                <div  class="dec qtybutton">-</div>
-                                <div  class="inc qtybutton">+</div>
-                            </div>
-                    </td>
-                    <td  class="product-subtotal">
-                            <span  class="amount"> $96.00 </span>
-                    </td>
-                    <td  class="product-remove">
-                        <a  class="cursor-pointer" (click)="''">
-                            <i  class="fa fa-times"></i>
-                        </a>
-                    </td>
-                </tr>
-                <tr  class="ng-star-inserted">
-                    <td  class="product-thumbnail">
-                        <a routerLink="/singepage">
-                            <!-- لازم اضع / -->
-                            <img  alt="product-img" src="assets/images/product_1.png">
-                        </a>
-                    </td>
-                    <td  class="product-name">
-                        <a  routerLink="/singepage">
-                            Wooden container Bowl
-                        </a>
-                    </td>
-                    <td  class="product-price">
-                            <span  class="amount">
-                                $96.00
-                            </span>
-                    </td>
-                    <td  class="product-quantity" >
-                            <div  class="cart-plus-minus">
-                                <input  type="text" readonly="">
-                                <div  class="dec qtybutton">-</div>
-                                <div  class="inc qtybutton">+</div>
-                            </div>
-                    </td>
-                    <td  class="product-subtotal">
-                            <span  class="amount"> $96.00 </span>
-                    </td>
-                    <td  class="product-remove">
-                        <a  class="cursor-pointer" (click)="''">
-                            <i  class="fa fa-times"></i>
-                        </a>
-                    </td>
-                </tr>
+
+                    @for (pro of listpro; track pro.id) {
+                        <tr  class="ng-star-inserted" >
+                            <td  class="product-thumbnail">
+                                <a routerLink="/singepage">
+                                    <!-- لازم اضع / -->
+                                    <img  alt="product-img" [src]="pro.imgurl">
+                                </a>
+                            </td>
+                            <td  class="product-name">
+                                <a  routerLink="/singepage">
+                                    {{pro.name}}
+                                </a>
+                            </td>
+                            <td  class="product-price">
+                                    <span  class="amount">
+                                        {{pro.price}}
+                                    </span>
+                            </td>
+                            <td  class="product-quantity" >
+                                    <div  class="cart-plus-minus" >
+                                        <input  type="text" readonly="">
+                                        <div  class="dec qtybutton">-</div>
+                                        <div  class="inc qtybutton">+</div>
+                                    </div>
+                            </td>
+                            <td  class="product-subtotal">
+                                    <span  class="amount"> {{pro.price}} </span>
+                            </td>
+                            <td  class="product-remove">
+                                <a  class="cursor-pointer" (click)="''">
+                                    <i  class="fa fa-times"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    }
                 <!-- row -->
 
                     

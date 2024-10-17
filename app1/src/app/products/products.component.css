@@ -39,6 +39,14 @@ border: none;
 background-color: white;
 }
 
+input[type="checkbox"] {
+    display: none; /* إخفاء الـ checkbox */
+}
+
+input[type="checkbox"]:checked + .fav {
+    color: #bc8246; /* اللون عند الضغط */
+}
+
 .btncard{
     background-color: #201f1f;
 }

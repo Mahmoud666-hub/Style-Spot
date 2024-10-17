@@ -42,4 +42,9 @@ export class StaticproductsService {
     return this.myproducts.filter((pro)=> pro.catid==catid);
   }
 
+  getproductbyid(id:number | null):Iproduct | null {
+    let myproduct = this.myproducts.find((pro)=> pro.id==id);
+    return myproduct? myproduct:null
+  }
+
 }

@@ -44,11 +44,14 @@
               <div class="card-body">
                 <h5 class="card-title"> {{pro.name}} </h5>
                 <p class="card-text"> {{pro.price}} $ </p>
-                <a href="/singepage" class="btn btn-primary btncard">Details</a>
-                <button class="search-input fav" routerLink="/wishlist" >
+                <a [routerLink]="['/singepage']" class="btn btn-primary btncard">Details</a>
+                <a (click)="sendproidfromcart(pro.id)" class="btn btn-primary btncard">Cart</a>
+                <label>
+                <input type="checkbox">
+                <span class="search-input fav" (click)="sendproidfromfav(pro.id)" >
                   <span class="material-symbols-outlined ">
                   favorite
-                  </span></button>
+                  </span></span></label>
               </div>
             </div>
             <!-- card -->

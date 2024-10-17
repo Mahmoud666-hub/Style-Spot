@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { StaticproductsService } from '../services/staticproducts.service';
 import { Iproduct } from '../models/iproduct';
+import { SingleproidService } from '../services/singleproid.service';
 
 @Component({
   selector: 'app-products',
@@ -13,7 +14,7 @@ export class ProductsComponent {
   filteredproducts:Iproduct[];
 
 
-  constructor(private stat:StaticproductsService) {
+  constructor(private stat:StaticproductsService, private singleid:SingleproidService) {
     this.products=stat.getallproducts();
     this.filteredproducts = stat.getallproducts();
   }
@@ -24,6 +25,14 @@ export class ProductsComponent {
       } else {
         this.filteredproducts = this.stat.getproductsbycatid(categoryId);
       }
+  }
+
+  sendproidfromfav(id:number) {
+    this.singleid.changeProductIdfav(id);
+  }
+
+  sendproidfromcart(id:number) {
+    this.singleid.changeProductIdcart(id);
   }
 
 }

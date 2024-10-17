@@ -6,13 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  isInputVisible = false; // حالة عرض حقل الإدخال
-
-  toggleInput() {
-    this.isInputVisible = !this.isInputVisible; // تبديل حالة العرض
-  }
-
-  handleButtonClick() {
-    alert('Button clicked!');
-  }
+ 
 }

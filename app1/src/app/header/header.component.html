@@ -1,93 +1,92 @@
 <!-- mahmoud ramadan -->
+
 <header>
-    <div style="display: flex; justify-content:space-between;">
-        <div style="display: flex;" >
-            <img src="../../assets/images/favicon1.png" alt="logo" style=" height: 80px; width:80px; margin-top:10px; margin-left:15px;">
-        </div>
 
-        <div class="head-bar"  >
-            <ul class="">
-                <li><a routerLink="home">Home</a></li>
-                <li> <a routerLink="products">Shop</a></li>
-                <li> <a routerLink="contact">Contact Us</a></li>
-                <li> <a routerLink="about">About Us</a></li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg " >
+        <div class="container-fluid nova">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/images/favicon1.png" alt="logo" style=" height: 80px; width:80px; margin-top:10px; margin-left:15px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="background-color: #F5F5F5;" >
+            <!-- noncircle -->
+            <div class="navbar-nav noncircle" >
+              <a class="nav-link line" aria-current="page" routerLink="/home">Home</a>
+              <a class="nav-link line" routerLink="/products">Shop</a>
+              <a class="nav-link line" routerLink="/about">About Us</a>
+              <a class="nav-link line" routerLink="/contact">Contact Us</a>
+            </div>
+            <!-- noncircle -->
 
-        <div >
-            <button class="search-input" id="searchdivbutton">
-                <span class="material-symbols-outlined" (click)="toggleInput()">
-                search
-                </span></button>
-            <button class="search-input" routerLink="/wishlist" >
-                <span class="material-symbols-outlined">
-                favorite
-                </span></button>
-                <div class="dropdownn">
-                    <!-- <span>Mouse over me</span> -->
-                    <button class="search-input" ><span class="material-symbols-outlined" >
-                        shopping_cart_checkout
-                        </span></button>
-                    <div class="dropdown-content">
-                        <span>
-                            <a routerLink="cart">Cart</a>
-                        </span>
-                        <hr>
-                        <span style="display: block;">
-                            <a routerLink="checkout">Check Out</a>
-                        </span>
-                    </div>
+
+              <!-- rightside -->
+              <!-- <div class="rightside"> -->
+                <!-- search -->
+              <form class="d-flex search" role="search" >
+              <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary search tab" type="submit">Search</button>
+              </form>
+              <!-- search -->
+
+        <!-- circular btn -->
+        <span class="circlebtns" >
+          <!-- <button class="search-input" id="searchdivbutton">
+              <span class="material-symbols-outlined" (click)="toggleInput()">
+              search
+              </span></button> -->
+          <button class="search-input" routerLink="/wishlist" >
+              <span class="material-symbols-outlined">
+              favorite
+              </span></button>
+              <div class="dropdownn">
+                  <!-- <span>Mouse over me</span> -->
+                  <button class="search-input" ><span class="material-symbols-outlined" >
+                      shopping_cart_checkout
+                      </span></button>
+                  <div class="dropdown-content">
+                      <span>
+                          <a routerLink="cart">Cart</a>
+                      </span>
+                      <hr>
+                      <span style="display: block;">
+                          <a routerLink="checkout">Check Out</a>
+                      </span>
                   </div>
-                <!-- <a href="cart">
-                    <button class="search-input" ><span class="material-symbols-outlined" >
-                        shopping_cart_checkout
-                        </span></button>
-                </a> -->
-
-            <!-- <button class="search-input"><span class="material-symbols-outlined" (click)="togglemenu()">
-                contacts_product
-                </span>
-            </button> -->
-            <div class="dropdownn">
-                <!-- <span>Mouse over me</span> -->
-                <button class="search-input"><span class="material-symbols-outlined">
-                    contacts_product
-                    </span>
-                </button>
-                <div class="dropdown-content">
-                    <span>
-                        <a routerLink="login">log-in
-                            <span class="material-symbols-outlined">
-                                login</span>
-                           </a>
-                    </span>
-                    <hr>
-
-                    <span style="display: block;">
-                        <a routerLink="register">sign up
-                            <span class="material-symbols-outlined">
-                                account_circle
-                            </span></a>
-                    </span>
                 </div>
-              </div>
-        </div>
-    </div>
+          <div class="dropdownn">
+              <!-- <span>Mouse over me</span> -->
+              <button class="search-input"><span class="material-symbols-outlined">
+                  contacts_product
+                  </span>
+              </button>
+              <div class="dropdown-content">
+                  <span>
+                      <a routerLink="login">log-in
+                          <span class="material-symbols-outlined">
+                              login</span>
+                         </a>
+                  </span>
+                  <hr>
 
-    <div id="searchdiv" >
-        <div class="input-wrapper"> 
-            <input *ngIf="isInputVisible" id="search" type="text" placeholder="Search..."> 
-            <!-- <button onclick="alert('Button clicked!');">  -->
-                <button *ngIf="isInputVisible" (click)="handleButtonClick()"> 
-    
-                <span class="material-symbols-outlined">
-                    search
-                    </span> 
-            </button>
+                  <span style="display: block;">
+                      <a routerLink="register">sign up
+                          <span class="material-symbols-outlined">
+                              account_circle
+                          </span></a>
+                  </span>
+              </div>
+            </div>
+          </span>
+         <!-- circular btn -->
+              <!-- </div> -->
+               <!-- rightside -->
+
+
+          </div>
         </div>
-    </div>
+      </nav>
 
 </header>
 
-
- 

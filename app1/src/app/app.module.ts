@@ -22,7 +22,6 @@ import { SingepageComponent } from './singepage/singepage.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -11,7 +11,6 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { SingepageComponent } from './singepage/singepage.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
-
 const routes: Routes = [
   {path:'', redirectTo:'about', pathMatch: 'full'},
   {path:"home", component:HomeComponent},

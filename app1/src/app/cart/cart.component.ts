@@ -13,6 +13,7 @@ export class CartComponent implements OnInit {
   myproid!:number;
   addedpro!:Iproduct | null;
   listpro:Iproduct[] = [] as Iproduct[];
+  totalprice:number = 0;
 
   constructor(private single:SingleproidService, private stat:StaticproductsService) {}
   ngOnInit(): void {
@@ -22,6 +23,7 @@ export class CartComponent implements OnInit {
         this.addedpro = this.stat.getproductbyid(this.myproid);
         if (this.addedpro && !this.listpro.includes(this.addedpro)) {
           this.listpro.push(this.addedpro);
+          this.totalprice += this.addedpro.price
         }
 
       }

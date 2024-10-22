@@ -1,17 +1,10 @@
-<<<<<<< HEAD
+
 /* #home {
-=======
-/*#home {
->>>>>>> f047ad6c4d2ac7b43cd4dc13d8259bcf7e579f15
-    background-image: url("../../assets/images/home.jpg");
+    background-image: url("/assets/images/imagcces.jfif");
     background-color: #cccccc;
      height: 90vh;
      background-repeat: no-repeat;
-<<<<<<< HEAD
      background-size: 100% 100%;   } */
-=======
-     background-size: 100% 100%;   }*/
->>>>>>> f047ad6c4d2ac7b43cd4dc13d8259bcf7e579f15
 /*AyaHaggag*/
 html,
 body{
@@ -51,7 +44,7 @@ swiper-slide .slide img{
 swiper-slide .slide .info{
   position: absolute;
   right: 22%;
-  top: 17%;
+  top: 10%;
   padding: 15px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   color: #323232;
@@ -105,7 +98,7 @@ swiper-slide .slide1 img{
 swiper-slide .slide1 .info{
   position: absolute;
   right: 11%;
-    top: 6%;
+    top: 10%;
   padding: 15px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   color: #323232;
@@ -159,7 +152,7 @@ swiper-slide .slide2 img{
 swiper-slide .slide2 .info{
   position: absolute;
   right: 20%;
-  top: 0%;
+  top: 5%;
   padding: 15px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   color: #323232;
@@ -213,7 +206,7 @@ swiper-slide .slide3 img{
 swiper-slide .slide3 .info{
   position: absolute;
   right: 14%;
-    top: 55%;
+    top: 35%;
   padding: 15px 30px;
   font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
   color: #323232;

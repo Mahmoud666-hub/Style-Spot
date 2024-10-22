@@ -44,8 +44,8 @@
               <div class="card-body">
                 <h5 class="card-title"> {{pro.name}} </h5>
                 <p class="card-text"> {{pro.price}} $ </p>
-                <a [routerLink]="['/singepage']" class="btn btn-primary btncard">Details</a>
-                <a (click)="sendproidfromcart(pro.id)" class="btn btn-primary btncard">Cart</a>
+                <a [routerLink]="['/singepage']" class="btn btn-dark btncard" style="margin-right: 2px;">Details</a>
+                <a (click)="sendproidfromcart(pro.id)" class="btn btn-dark btncard">Cart</a>
                 <label>
                 <input type="checkbox">
                 <span class="search-input fav" (click)="sendproidfromfav(pro.id)" >

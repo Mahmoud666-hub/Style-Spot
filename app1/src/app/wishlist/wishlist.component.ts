@@ -29,6 +29,8 @@ export class WishlistComponent implements OnInit {
     })
   };
 
-
+  addcart(id:number) {
+    this.singlepro.changeProductIdcart(id);
+  }
 
 }

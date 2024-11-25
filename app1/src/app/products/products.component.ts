@@ -35,5 +35,9 @@ export class ProductsComponent {
     this.singleid.changeProductIdcart(id);
   }
 
+  sendproiddate(id:number) {
+    this.singleid.changeproductdate(id);
+  }
+
 }
 

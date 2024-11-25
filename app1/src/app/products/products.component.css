@@ -34,10 +34,10 @@
     float: right;
 }
 
-.fav{
+/* .fav{
 border: none;
-background-color: white;
-}
+background-color: rgb(251, 247, 247);
+} */
 
 input[type="checkbox"] {
     display: none; /* إخفاء الـ checkbox */

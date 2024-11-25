@@ -1,21 +1,21 @@
 <div class="box">
     <div class="row">
         <div class="col-md-5 col-sm-12">
-            <img src="../../assets/images/product-03.jpg" alt="sas">
+            <img [src]="myproduct?.imgurl" alt="sas">
         </div>
         <div class="col-md-7 col-sm-12">
             <div class="info">
                 <ul class="list-unstyled">
-                    <li><strong>Title : </strong>dsfsdf</li>
-                    <li><strong>Category : </strong>dsfsdf</li>
-                    <li><strong>Description : </strong>dsfsdf</li>
+                    <li><strong>Title : </strong>{{myproduct?.name}}</li>
+                    <li><strong>Category : </strong>{{myproduct?.catid}}</li>
+                    <li><strong>Description : </strong>best product</li>
                     <li><strong>Rate : </strong>3.5</li>
-                    <li><strong>Count : </strong>120</li>
-                    <li><strong>Price : </strong>155 LE</li>
+                    <li><strong>Count : </strong>{{myproduct?.quantity}}</li>
+                    <li><strong>Price : </strong>{{myproduct?.price | currency}}</li>
                 </ul>
             </div>
             <div>
-                <button type="submit" class="addtocart form-control">Add To Cart</button>
+                <button type="submit" class="addtocart form-control" (click)="addcart()">Add To Cart</button>
             </div>
         </div>
     </div>
